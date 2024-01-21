@@ -1,0 +1,165 @@
+body {
+    background-color: #030617;
+   font-family: sans-serif;
+margin: 0;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+h4 {
+    font-size: large;
+}
+
+
+#panel-grid {
+    justify-content: center;
+    margin: 9rem 8rem 3rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    column-gap: 3rem;
+    row-gap: 5rem;
+}
+
+@media (max-width: 1090px) {
+    #panel-grid { 
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+@media (max-width: 724px) {
+    #panel-grid { 
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+
+#leaderboard-panel, #details-panel, #submission-panel {
+    background-color: #fff;
+    width: 25%;
+    min-width: 330px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+#leaderboard-panel {
+    background-color: #202938;
+color: #fff;}
+
+#details-panel {
+    text-align: center;
+    font-weight: bolder;
+} 
+
+#details-content {
+    margin-top: 5rem;
+}
+
+#submission-content {
+    text-align: center;
+    margin-top: 28%;
+}
+
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 11px 21px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border: solid;
+}
+
+
+.btn:hover {
+    background-color: #d5d5d5;
+    color: black;
+    border: solid;
+}
+
+
+.sub-head {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+label.upload-btn input[type="file"] {
+    position: absolute;
+    top: -1000px;
+  }
+
+
+
+  .upload-btn {
+    background-color: #3d80f9;
+    color: #efefef;
+    padding: 3% 17%;
+        border-radius: 9px;
+  }
+
+  #coupon-btn {
+    border-radius: 9px;
+    padding: 3% 8%;
+    border: solid;
+    border-color: #d1d1d1;
+    border-width: 1px;
+    margin-top: 22px;
+  }
+
+
+  #leaderboard-head {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+  } 
+
+  #leaderboard-txt {
+    margin: -20px 0px 21px 0px;
+  }
+
+  #refresh-btn {
+    background-color: #3d80f9;
+    padding: 30% 42%;
+    border-radius: 12px;
+    color: #fff;
+    border: groove;
+}
+  
+
+#leaderboard-content {
+    margin: 21px;
+}
+
+#leaderboard-tab {
+    height: 350px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  /* th {
+    background-color: #101728;
+    position: absolute;
+  } */
+  
+  tr:nth-child(even) {background-color: #384152;}
+ 
